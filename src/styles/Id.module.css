@@ -1,0 +1,911 @@
+.Dashboardparent{
+    background: #F8F9FA 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main {
+    display: inline-block;
+    flex-direction: row;
+    width: 1600px;
+    height: 100%;
+    margin-top: 1em;
+  }
+
+  .navbarcontent{
+    display: flex;
+    flex-direction: row;  
+    margin-left: -6em;
+    gap: 60px;
+}
+
+  .contentheader{
+    margin-top: -1.5em;
+    margin-bottom: -6em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .transactionbtn2 {
+    width: 230px;
+height: 56px;
+background: linear-gradient(to left, #3EB9E5 0%, #0D1CB3 60%);
+box-shadow: inset 0px 0px 10px #021697;
+border-radius: 8px;
+font: normal normal 300 19px/23px Rubik;
+letter-spacing: 0px;
+cursor: pointer;
+color: #F8F9FA;
+border: none;
+  }
+  .transactionbtn{
+    width: 230px;
+    height: 56px;
+    background: transparent radial-gradient(closest-side at 87% 100%, #F8F9FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 0px 10px #B7B7B7;
+    border-radius: 8px;
+    border: none;
+    font: normal normal 300 19px/23px Rubik;
+    cursor: pointer;
+  }
+
+  .detailsbtn2{
+    width: 230px;
+    height: 56px;
+    background: transparent radial-gradient(closest-side at 87% 100%, #F8F9FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 0px 10px #B7B7B7;
+    border-radius: 8px;
+    border: none;
+    font: normal normal 300 19px/23px Rubik;
+    cursor: pointer;
+  }
+  .detailsbtn{
+    width: 230px;
+    height: 56px;
+    background: linear-gradient(to left, #3EB9E5 0%, #0D1CB3 60%);
+    box-shadow: inset 0px 0px 10px #021697;
+    border-radius: 8px;
+    font: normal normal 300 19px/23px Rubik;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: #F8F9FA;
+    border: none;
+  }
+  .turnoffaccount{
+        display: flex;
+        flex-direction: row;  
+        align-items: flex-end;
+        justify-content: flex-end; 
+        font: normal normal 300 19px/23px Rubik;
+        margin-top: 1.5em; 
+        gap: 1em;
+  }
+
+  .articlesparent{
+    display: flex;
+    gap: 2.8em;
+    margin: 0 auto;
+    margin-top: 4em;
+  }
+  .firstarticle{
+    width: 790px;
+    height: 120em;
+    border-radius: 17px;
+  }
+
+  .secondarticle{
+    width: 790px;
+    height: 120em;
+    border-radius: 17px;
+  }
+  .firstfirstchild{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px#B7B7B740;
+    width: 770px;
+    height: 1029px;
+    border-radius: 17px;
+
+  }
+  .firstsecchild{
+    margin-top: 4em;
+    width: 770px;
+    height: 665px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #B7B7B740;
+    border-radius: 17px;
+    opacity: 1;
+  }
+  .secfirstchild{
+    width: 790px;
+    height: 370px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #B7B7B740;
+    border-radius: 17px;
+    opacity: 1;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .secsecchild{
+    margin-top: 4em;
+    width: 790px;
+    height: 686px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #B7B7B740;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secthirdchild {
+    margin-top: 3.6em;
+    width: 803px;
+    height: 585px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #B7B7B740;
+    border-radius: 17px;
+    opacity: 1;
+  }
+
+        /* BUSINESS                   INFO */
+        
+
+  .box1header{
+    height: 7em;
+    display: flex;
+    width: 710px;
+    margin: 0 auto;
+    gap: 1em;
+  }
+  .box1headertext{
+    margin: 1.7em 0;
+    text-align: left;
+    font: normal normal 300 26px/31px Rubik;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  .imageid{
+    margin-left: 25em;
+    display: flex;
+    align-items: center;
+  }
+  .parentdiv{
+    margin-top: 2em;
+  }
+  .parentcont{
+    width: 687px;
+    height: 75px;
+    background: #F8F9FA 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 15px;
+    opacity: 1;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .childcont{
+    width: 223px;
+    height: 75px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 15px;
+    opacity: 1;
+    margin-top: -69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font: normal normal 300 20px/24px Rubik;
+    color: #000000;
+  }
+  .parenttext{
+    display: flex;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+    margin-left: 13em;
+    margin-top: 1.2em;
+    font: normal normal 300 20px/24px Rubik;
+  }
+.Lparenttext{
+  margin-left: 3em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font: normal normal 300 20px/24px Rubik;
+}
+.boxparentcnt{
+  width: 43em;
+  height: 19em;
+}
+.disputetext{
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #000000;
+  margin: 0 auto;
+  text-align: left;
+}
+.disputeicontext{
+  display:flex;
+  flex-direction: row;
+  gap: 1.7em;
+}
+.graphicalcolor{
+  width: 695px;
+  height: 136px;
+  background: transparent linear-gradient(180deg, #3EB9E561 0%, #3EB9E500 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: 4px solid #0D1CB3; 
+  border-bottom: none;
+   margin-top: 3em;
+}
+.EST{
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  text-align: left;
+  font: normal normal normal 24px/28px Rubik;
+  letter-spacing: 0px;
+  color: #757575;
+  opacity: 1;
+  margin-top: 1.5em;
+}
+.box4parentcont{
+  width: 100%;
+  height: 40em;
+
+}
+.feescheduleicon{
+  display: flex;
+  gap: 1em;
+  margin-left: 2em;
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #000000;
+  height: 2.7em;
+  align-items: center;
+}
+.personalcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3.5em;
+}
+
+.monetizatext{
+  display: flex;
+  align-items: center;
+  gap: 1.2em;  
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.feeandper{
+  display: flex;
+  width: 660px;
+  gap: 530px;
+  justify-content: center;
+}
+.personalaccfreqcont{
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  width: 666px;
+  margin: 0 auto;
+}
+.personalaccfreq{
+  width: 670px;
+height: 57px;
+background: #F8F9FA 0% 0% no-repeat padding-box;
+border: 1px solid #B7B7B7;
+border-radius: 15px;
+font: normal normal 300 20px/24px Rubik;  align-items: center;
+opacity: 1;
+display: flex;
+gap: 13em;
+align-items: center;
+justify-content: center;
+}
+.parentbox{
+  height: 21em;
+  width: 41.4em;
+  display: flex;
+  gap: 2.8em;
+}
+.firstbox{
+  width: 20em;
+  height: 21em;
+}
+.secondbox{
+  width: 20em;
+  height: 21em;
+  display: flex;
+  flex-direction: column;
+}
+.goldacc{
+  display: flex;
+  gap: 1.7em;
+  text-align: left;
+  align-items: center;
+  margin-left: -4px;
+}
+.goldacctext{
+  font: normal normal 300 26px/31px Rubik;  
+  color: #000000;
+  opacity: 1;
+}
+.secfeeandper{
+  display: flex;
+  gap: 11.2em;
+}
+.goldaccfreq{
+  display: flex;
+  gap: 4.5em;
+  width: 308px;
+  font: normal normal 300 20px/24px Rubik;  align-items: center;
+  justify-content: center;
+  height: 57px;
+  background: #F8F9FA 0% 0% no-repeat padding-box;
+  border: 1px solid #B7B7B7;
+  border-radius: 15px;
+}
+.fee{
+  font: normal normal 300 20px/24px Rubik;
+letter-spacing: 0px;
+color: #000000;
+}
+.secparent{
+  margin-top: -1em;
+}
+.documenticon{
+  height: 4em;
+  display: flex;
+  gap: 0.7em;
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  align-items: center;
+}
+.legalattatchfile{
+  display: flex;
+  gap: 20em;
+  width: 687px;
+  height: 75px;
+  background: #F8F9FA 0% 0% no-repeat padding-box;
+  border: 1px solid #B7B7B7;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 0em auto;
+  margin-top: 2.9em;
+}
+.legaltext{
+  text-align: left;
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-left: 1em;
+}
+.legaldocument{
+  display: flex;
+  gap: 23em;
+  width: 687px;
+  height: 75px;
+  background: #F8F9FA 0% 0% no-repeat padding-box;
+  border: 1px solid #B7B7B7;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+}
+
+          /* COUPON         CODE       BOX   */
+
+
+.addicontext{
+  height: 6em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-left: 2.3em;
+}
+.coupontext{
+  text-align: left;
+font: normal normal 300 26px/31px Rubik;
+letter-spacing: 0px;
+color: #000000;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+.firstinput{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  
+}
+
+.title{
+  margin-left: 1em;
+  text-align: left;
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+#noc{
+  outline: none;
+  font: normal normal 300 26px/31px Rubik;
+  width: 437px;
+  text-align: left;
+  height: 75px;
+  background: #F8F9FA 0% 0% no-repeat padding-box;
+  border: 1px solid #B7B7B7;
+  border-radius: 15px;
+}
+#noc::placeholder {
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #B7B7B7;
+  text-indent: 2em;
+}
+
+.secinput{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.forminputparent{
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+#percent::placeholder {
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #B7B7B7;
+  text-indent: 8em;
+}
+#percent{
+  outline: none;
+  font: normal normal 300 26px/31px Rubik;
+  width: 245px;
+  text-align: left;
+  height: 75px;
+  background: #F8F9FA 0% 0% no-repeat padding-box;
+  border: 1px solid #B7B7B7;
+  border-radius: 15px;
+}
+.Amount{
+  margin-left: 1em;
+  font: normal normal 300 26px/31px Rubik;
+
+}
+.thirdinput{
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.code{
+  margin-left: 1em;
+  font: normal normal 300 26px/31px Rubik;
+}
+#etc{
+  outline: none;
+  text-align: left;
+  font: normal normal 300 26px/31px Rubik;
+  width: 718px;
+  height: 75px;
+  background: #F8F9FA 0% 0% no-repeat padding-box;
+  border: 1px solid #B7B7B7;
+  border-radius: 15px;
+}
+#etc::placeholder{
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #B7B7B7;
+  text-indent: 2em;
+}
+.button{
+  width: 242px;
+  height: 56px;
+  background: linear-gradient(to left, #3EB9E5 0%, #0D1CB3 100%) 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 0px 10px #021697;
+  border-radius: 8px;
+  border: 1px solid #021697;
+  color: #FFFFFF;
+  cursor: pointer;
+  font: normal normal 300 19px/23px Rubik;
+}
+.buttoncont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+.contentbox{
+  width: 1620px;
+  height: 720px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 10px #B7B7B740;
+  border-radius: 17px;
+  margin-top: 5em;
+}
+.buttons{
+  display: flex;
+  gap: 1em;
+  margin-left: 2.6em;
+  height: 8em;
+  align-items: center;
+}
+.depositbtn{
+  width: 230px;
+height: 56px;
+background: linear-gradient(to left, #3EB9E5 0%, #0D1CB3 60%);
+box-shadow: inset 0px 0px 10px #021697;
+border-radius: 8px;
+font: normal normal 300 19px/23px Rubik;
+letter-spacing: 0px;
+cursor: pointer;
+color: #F8F9FA;
+border: none;
+}
+
+.depositbtn:hover {
+background: linear-gradient(to right, #3EB9E5 0%, #0D1CB3 60%);
+border: 1px solid #021697;
+}
+
+.withdrawbtn{
+  width: 230px;
+height: 56px;
+background: transparent radial-gradient(closest-side at 87% 100%, #F8F9FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+box-shadow: inset 0px 0px 10px #B7B7B7;
+border-radius: 8px;
+font: normal normal 300 19px/23px Rubik;
+outline: none;
+border: none;
+cursor: pointer;
+}
+
+#search{
+  width: 308px;
+  height: 68px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #B7B7B7;
+  border-radius: 12px;
+  opacity: 1;
+  position: relative;
+  left: 37em;
+}
+#search::placeholder{
+  text-indent: 2em;
+  font: normal normal 300 26px/31px Rubik;
+  letter-spacing: 0px;
+  color: #B7B7B7;
+}
+.tablecont{
+  width: 95%;
+  margin: 2em auto;
+  align-items: center;
+}
+.table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.td{
+  text-align: left;
+  font: normal normal 300 20px/24px Rubik;
+  letter-spacing: 0px;
+  color: #000000;
+  vertical-align: middle;
+  position: relative;
+  padding-top: 1em;
+  left: 2em;
+}
+
+.th{
+  background: #F0F2F7 0% 0% no-repeat padding-box;
+  text-indent: 1.4em;
+  text-align: left;
+  font: normal normal 300 20px/24px Rubik;
+  letter-spacing: 0px;
+  position: relative;
+  vertical-align: middle;
+  color: #000000;
+  vertical-align: middle;
+  line-height: 60px;
+}
+.th:first-child{
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.th:nth-child(6){
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* .tr{
+  position: relative;
+  top: 1.4em;
+} */
+/* .thtr {
+  align-items: center;
+} */
+
+/* .thead2{
+  background: #F0F2F7 0% 0% no-repeat padding-box;
+  border-radius: 12px; 
+  width: 80px;
+  align-items: center;
+} */
+
+
+.tr:nth-child(1) td:nth-child(5),
+.tr:nth-child(2) td:nth-child(5) {
+  font: normal normal 300 20px/24px Rubik;
+  letter-spacing: 0px;
+  color: #FF9100;
+}
+.tr:nth-child(3) td:nth-child(5),
+.tr:nth-child(4) td:nth-child(5),
+.tr:nth-child(5) td:nth-child(5){
+  font: normal normal 300 20px/24px Rubik;
+  letter-spacing: 0px;
+  letter-spacing: 0px;
+  color: #08AE14;
+}
+.tr:nth-child(3) td:nth-child(6),
+.tr:nth-child(2) td:nth-child(6),
+.tr:nth-child(1) td:nth-child(6),
+.tr:nth-child(4) td:nth-child(6),
+.tr:nth-child(5) td:nth-child(6){
+  font: normal normal 300 20px/24px Rubik;
+  letter-spacing: 0px;
+  color: #0D1CB3;
+}
+/* .tbody{
+  font: normal normal 300 20px/24px Rubik;
+} */
+
+.th:first-child,
+.td:first-child {
+  width: 20%;
+}
+.th:nth-child(3),
+.td:nth-child(3) {
+  width: 17%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.headercontentp {
+    margin: 0 auto;
+}
+
+.contentparent {
+    border-radius: 17px;
+    opacity: 1;
+    margin-top: 90px;
+}
+
+.contentboxlist{
+    width: 1620px;
+    height: 1000px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #B7B7B740;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.companylistcontainer {
+    margin: 1em;
+    display: flex;
+    border-radius: 20px;
+
+}
+
+.companylist{
+    text-align: left;
+    font: normal normal 300 26px/31px Rubik;
+    color: #000000;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.dataparent{
+    align-items: center;
+    width: 96%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 2em 2em;
+    opacity: 1;
+} 
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 6rem;
+    font-size: 26px;
+    font-weight: 300;
+    border-radius: 12px;
+
+}
+.thead {
+    background-color: #F8F9FA;
+    border-radius: 12px;
+}
+.th {
+    vertical-align: top;
+    height: 68px;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.tdata:hover {
+    background-color: #F8F9FA;
+    border-radius: 12px;
+}
+.td {
+    vertical-align: top;
+    height: 68px;
+}
+
+
+.addcompanyBtn {
+      width: 306px;
+        height: 70px;
+        border-radius: 8px;
+        align-items: center;
+        display: flex;
+        color: #F6F6F6;
+        background: linear-gradient(to left, #3EB9E5 2%, #0D1CB3 70%);
+        box-shadow: inset 0px 0px 10px #021697;
+        border: #021697;
+        text-align: center;
+        font: normal normal 300 24px/28px Rubik;
+        opacity: 1;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 1.3em;   
+  }
+  
+  .addroundediconcont {
+    margin-right: 1em;
+        margin-left: 1em;
+        text-align: center;
+        width: 22px;
+        height: 22px;
+        opacity: 1;
+  }
+  
+  .addroundedicon {
+     width: 8px;
+        height: 8px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+  }
+  
+  .companylistsearch {
+        display: flex;
+        gap: 60%;
+        padding: 1em;
+  }
+  
+  .personsharpicon {
+    margin-top: 1.2em;
+    margin-left: 2em;
+    color: #0D1CB3;
+    opacity: 1;
+  }
+
+  
+  .search {
+       display: flex;
+        align-items: center;
+  }
+  
+  
+  .companyLogo {
+     display: flex;
+    justify-content: center;
+  }
+  
+  .powerDeleteIcons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 1em;
+  }
+  
+  .psticoncontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 37px;
+        height: 37px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 6px;
+        opacity: 1;
+        cursor: pointer;
+    }
+  
+  .delicon-container {
+    width: 37px;
+    height: 37px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    opacity: 1;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+  
+  .psticon {
+    width: 13px;
+    height: 13px;
+    color: #757575;
+    opacity: 1;
+   }
+  
+  .delicon {
+        width: 13px;
+        height: 13px;
+        color: #757575;
+        opacity: 1;
+  }

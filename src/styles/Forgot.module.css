@@ -1,0 +1,85 @@
+.formparent{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 9px 20px #0000001C;
+border-radius: 64px;
+opacity: 1;
+width: 518px;
+height: 705px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+position: relative;
+margin-top: 188px;
+
+}
+.image1 {
+    margin-top: -2em;
+}
+
+.forgotpassword{
+    width: 274px;
+height: 42px;
+text-align: left;
+font: normal normal normal 35px/42px Rubik;
+color: #000000;
+letter-spacing: -1px;
+opacity: 1;
+font-weight: medium;
+
+}
+.loginform {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em
+}
+#recoveryemail{
+    width: 325px;
+height: 56px;
+background: #F6F6F6 0% 0% no-repeat padding-box;
+border: 1px solid #B7B7B7;
+border-radius: 9px;
+font: normal normal normal 20px/24px Rubik;
+outline: none;
+margin-bottom: 2em;
+}
+#recoveryemail::placeholder {
+    padding-left: 40px;
+    opacity: 1;
+    color: #B7B7B7;
+  }
+.loginbutton{
+    width: 331px;
+    height: 49px;
+    background: linear-gradient(to left, #3EB9E5 2%, #0D1CB3 70%);
+    box-shadow: inset 0px 0px 10px #021697;
+    border-radius: 8px;
+    opacity: 1;
+    color: #f6f6f6;
+    cursor: pointer;
+    font: normal normal normal 16px/19px 'Rubik';
+    border: #021697;
+    font-weight: medium;
+    }
+    .inputsflex{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.9em;
+        gap: 0.3em;
+      }
+      
+      
+      .enterrecoverytext{
+        text-align: left;
+      font: normal normal normal 20px/24px Rubik;
+      letter-spacing: 0px;
+      font-size: 20px;
+      color: #000000;
+      opacity: 1;
+      height: 24px;
+      width: 191px;
+      opacity: 1;
+      font-weight: 400;
+      }
+      

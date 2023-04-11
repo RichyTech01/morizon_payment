@@ -1,0 +1,384 @@
+.Dashboardparent{
+    background: #F8F9FA 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em auto;
+}
+.dashcontainer{
+    position: relative;
+    top: -2em;
+}
+
+.headercontentp {
+    margin: 0 auto;
+}
+.contentparent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+    opacity: 1;
+    margin-top: 90px;
+  }
+  
+  .contentboxlist {
+    width: 1620px;
+    height: 1000px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #B7B7B740;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 2em; 
+  }
+  
+
+.contentparent {
+    border-radius: 17px;
+    opacity: 1;
+    margin-top: 90px;
+}
+
+.navbarcontent{
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    margin-left: -80px;
+    gap: 70px;
+}
+
+.contentboxlist{
+    width: 1620px;
+    height: 1000px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #B7B7B740;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.companylistcontainer {
+    margin: 1em;
+    display: flex;
+    border-radius: 20px;
+
+}
+
+.companylist{
+    text-align: left;
+    font: normal normal 300 26px/31px Rubik;
+    color: #000000;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.dataparent{
+    align-items: center;
+    width: 96%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 2em 2em;
+    border-radius: 62px;
+    opacity: 1;
+} 
+.table {
+    border-collapse: collapse;
+    width: 96%;
+    line-height: 6rem;
+    font-size: 26px;
+    font-weight: 300;
+    border-radius: 12px;
+
+}
+
+.th {
+    background-color: #F8F9FA;
+    height: 68px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;font: normal normal 300 26px/31px Rubik;
+}
+.th:nth-child(1){
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.th:nth-child(7){
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.td {
+    vertical-align: top;
+    height: 68px;
+    padding-top: 1.2em;
+    font: normal normal 300 26px/31px Rubik;
+    letter-spacing: 0px;
+    color: #000000;
+    position: relative;
+    top: 1em;
+}
+.addcompanyBtn {
+      width: 306px;
+        height: 70px;
+        border-radius: 8px;
+        align-items: center;
+        display: flex;
+        color: #F6F6F6;
+        background: linear-gradient(to left, #3EB9E5 2%, #0D1CB3 70%);
+        box-shadow: inset 0px 0px 10px #021697;
+        border: #021697;
+        text-align: center;
+        font: normal normal 300 24px/28px Rubik;
+        opacity: 1;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 1.3em;   
+  }
+  
+  .addroundediconcont {
+    margin-right: 1em;
+        margin-left: 1em;
+        text-align: center;
+        width: 22px;
+        height: 22px;
+        opacity: 1;
+  }
+  
+  .addroundedicon {
+     width: 8px;
+        height: 8px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+  }
+  
+  .companylistsearch {
+        display: flex;
+        gap: 60%;
+        padding: 1em;
+  }
+  
+  .search {
+       display: flex;
+        align-items: center;
+  }
+  
+  
+  .companyLogo {
+     display: flex;
+    justify-content: center;
+    position: relative;
+    top: -0.5em;
+  }
+  
+  .powerDeleteIcons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 2em;
+  }
+  
+  .psticoncontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 37px;
+        height: 37px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 6px;
+        opacity: 1;
+        cursor: pointer;
+    }
+  
+  .delicon-container {
+    width: 37px;
+    height: 37px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    opacity: 1;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+  
+  .psticon {
+    width: 13px;
+    height: 13px;
+    color: #757575;
+    opacity: 1;
+   }
+  
+  .delicon {
+        width: 13px;
+        height: 13px;
+        color: #757575;
+        opacity: 1;
+  }
+  
+  .headertexts{
+    display: flex;
+    flex-direction: row;
+    gap:  1em;
+    justify-content: center;
+   
+}
+
+.headertext{
+    display: flex;
+    flex-direction: row;
+    gap:  3em;
+    margin-top: 1.6em;
+    justify-content: center;
+}
+.logodash{
+    display: flex;
+    gap: em;
+    margin-top: 0.8em;
+    margin-left: 1em;
+}
+.dashboardtext{
+    margin: 0 auto;
+    padding: 0em 1em;
+    font: normal normal 300 36px/43px Rubik;
+    color: #000000;
+    opacity: 1;
+}
+#dashboardsearch1{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 8px;
+    letter-spacing: 0px;
+    color: #000000;
+  font: normal normal 300 19px/23px Rubik;
+  outline: none;
+    width: 454px;
+    height: 70px;
+    margin-left: 6em;
+    }
+#dashboardsearch1::placeholder {
+        padding-left: 40px;
+    font: italic normal 300 15px/18px Rubik;
+    opacity: 1;
+        color: #B7B7B7;
+ }
+ .datetimeadminlist{
+    display: flex;
+    gap: 3em;
+    margin-top: -0.7em;
+}
+.datetime{
+    margin-top: 2.5em;
+    font: normal normal normal 12px/14px Rubik;
+    letter-spacing: 0px;
+    color: #160101;
+  }
+  .abovedatetime{
+    text-align: left;
+    font: normal normal bold 12px/14px Rubik;
+    color: #160101;
+    opacity: 1;
+    margin-top: -1em;
+}
+.datetimeadmin{
+    margin-top: -1em;
+    display: flex;
+    justify-content: flex-end;
+    font: normal normal normal 13px/17px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.jimmymorg{
+    margin-top: 0.1em;
+    line-height: -8em;
+}
+.jimmytext{
+    margin-top: 1.1em;
+    width: 142px;
+    height: 27px;
+    text-align: right;
+    font: normal normal bold 20px/27px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.circlepics{
+    width: 66px;
+    height: 66px;
+    border-radius: 3em;
+    background-color: black;
+    margin-left: -2em;
+}
+.navbar {
+    margin: 0 auto;
+  }
+  .imgnav {
+    background-size: cover;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    height: 800px;
+    justify-content: space-between;
+    margin-top: -3em;
+    position: relative;
+  }
+
+  .dashnavlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font: normal normal 300 14px/17px Rubik;
+  }
+  .navlists{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    
+ }
+ .transa {
+    margin: 3em -1em;
+  width: 68px;
+  height: 17px;
+  text-align: center;
+  font: normal normal 300 14px/17px Rubik;
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration: none;
+}
+.dashnavlinks {
+    color: white;
+   }
+   #search2{
+    width: 300px;
+    height: 68px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 12px;
+    opacity: 1;
+    outline: none;
+    margin-top: 0.4em;
+    font: normal normal 300 26px/31px Rubik;
+
+}
+#search2::placeholder{
+    padding-left: 1.3em;
+    text-align: left;
+    font: normal normal 300 26px/31px Rubik;
+    color: #B7B7B7;
+    opacity: 1;
+}
+.hr {
+    color: black;
+    opacity: 0.2;
+}
