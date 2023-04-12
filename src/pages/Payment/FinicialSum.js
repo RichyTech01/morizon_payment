@@ -4,8 +4,8 @@ import LeftNavbar from '../../../Dashboard/LeftNavbar';
 import FinicialSum from '../../../PaymentComp/FinicialSum';
 const Payment = () => {
     return ( 
-        <div>
-            <header>
+        <div className={styles.Dashboardparent}>
+            <header className={styles.headercontentp}>
             <HeaderDash/>
             </header>
             <div  className={styles.navbarcontent}>

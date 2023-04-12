@@ -6,8 +6,8 @@ import LeftNavbar from '../../../Dashboard/LeftNavbar';
 const Content = () => {
 
 return (
-    <div>
-        <header>
+    <div  className={styles.Dashboardparent}>
+        <header className={styles.headercontentp}>
         <HeaderDash/>
         </header>
         <div className={styles.navbarcontent}>

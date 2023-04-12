@@ -4,19 +4,21 @@ import styles from '@/styles/Transaction.module.css'
 import Content from "../../../TransactionCom/Content";
 const Transaction = () => {
     return ( 
-        <div>
-            <header>
-            <HeaderDash/>
-            </header>
-            <div className={styles.navbarcontent}>
-            <nav>
-                <LeftNavbar />
-            </nav>
-            <content>
-                <Content/>
-            </content>
+        <div  className={styles.Dashboardparent}>
+        <div className={styles.headercontentp}>
+           <HeaderDash/>
         </div>
-        </div>
+
+    <div className={styles.navbarcontent}>
+       <div className={styles.navcontainer}>
+        <LeftNavbar/>  
+      </div>
+
+      <div className={styles.contentparent}>
+       <Content/>
+      </div>
+  </div>
+</div>
      );
 }
  

@@ -7,18 +7,8 @@ import Box3 from './IdContentbox/Box3';
 import Box4 from './IdContentbox/Box4';
 import Box5 from './IdContentbox/Box5';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-
 
 const Content = () => {
-    const router = useRouter()
-    const {id} = router.query
-const openTransaction = () => {
-    // router.push(`/Dashboard/${id}/processingOff`)
-};
-const openDetails = () => {
-    // router.push(`/Dashboard/${id}`)
-}
 return (
     <main className={styles.main}>
         <div className={styles.contentheader}>
@@ -31,8 +21,8 @@ return (
                 }} 
                 />
             </Link>
-            <button onClick={openDetails} className={styles.detailsbtn}>Detail</button>
-            <button  onClick={openTransaction} className={styles.transactionbtn}>Transaction</button>
+            <button className={styles.detailsbtn}>Detail</button>
+            <button className={styles.transactionbtn}>Transaction</button>
         
         </div>
         <div className={styles.turnoffaccount}>

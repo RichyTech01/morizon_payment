@@ -5,12 +5,12 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    width: 1860px;
 }
 
 .main {
     display: inline-block;
     flex-direction: row;
-    width: 1600px;
     height: 100%;
     margin-top: 1em;
   }
@@ -18,29 +18,32 @@
   .navbarcontent{
     display: flex;
     flex-direction: row;  
-    margin-left: -6em;
-    gap: 60px;
+    gap: 50px;
+    width: 1700px;
+    position: relative;
+    left: -90px;
 }
 
   .contentheader{
     margin-top: -1.5em;
     margin-bottom: -6em;
+    position: relative;
     display: flex;
     gap: 2em;
     align-items: center;
   }
-
+  
   .transactionbtn2 {
     width: 230px;
-height: 56px;
-background: linear-gradient(to left, #3EB9E5 0%, #0D1CB3 60%);
-box-shadow: inset 0px 0px 10px #021697;
-border-radius: 8px;
-font: normal normal 300 19px/23px Rubik;
-letter-spacing: 0px;
-cursor: pointer;
-color: #F8F9FA;
-border: none;
+    height: 56px;
+    background: linear-gradient(to left, #3EB9E5 0%, #0D1CB3 60%);
+    box-shadow: inset 0px 0px 10px #021697;
+    border-radius: 8px;
+    font: normal normal 300 19px/23px Rubik;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: #F8F9FA;
+    border: none;
   }
   .transactionbtn{
     width: 230px;
@@ -84,12 +87,14 @@ border: none;
         margin-top: 1.5em; 
         gap: 1em;
   }
-
+    
   .articlesparent{
     display: flex;
-    gap: 2.8em;
+    gap: 3em;
     margin: 0 auto;
     margin-top: 4em;
+    position: relative;
+    /* left: 10px; */
   }
   .firstarticle{
     width: 790px;
@@ -691,45 +696,7 @@ cursor: pointer;
 .td:nth-child(3) {
   width: 17%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
-.headercontentp {
-    margin: 0 auto;
-}
 
 .contentparent {
     border-radius: 17px;
@@ -909,3 +876,4 @@ cursor: pointer;
         color: #757575;
         opacity: 1;
   }
+  

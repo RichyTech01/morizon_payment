@@ -4,15 +4,15 @@ import LeftNavbar from '../../../Dashboard/LeftNavbar';
 import Content from '../../../PaymentComp/Content';
 const Payment = () => {
     return ( 
-        <div>
-            <header>
+        <div className={styles.Dashboardparent}>
+            <header className={styles.headercontentp}>
             <HeaderDash/>
             </header>
-            <div  className={styles.navbarcontent}>
-                <nav>
+            <div className={styles.navbarcontent}>
+                <nav className={styles.navcontainer}>
                 <LeftNavbar />
                 </nav>
-                <content>
+                <content className={styles.contentparent}>
                     <Content/>
                 </content>
             </div>

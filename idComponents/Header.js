@@ -13,7 +13,7 @@ const HeaderDash = () => {
                 <Image
                   src='/morizon-dash.png'
                   width={264}
-                  height={59}
+                  height={69}
                   alt='logo'
                   required
                 />
