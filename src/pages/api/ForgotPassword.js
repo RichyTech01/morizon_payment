@@ -23,12 +23,12 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 });
-      // Handle forgot password logic here
       const { email } = req.body;
-      // Send reset password email to the user's email address
+
       res.status(200).json({ success: true });
+      
     } else {
-      // Return error response for unsupported HTTP method
+
       res.status(405).json({ error: 'Method Not Allowed' });
     }
   }
