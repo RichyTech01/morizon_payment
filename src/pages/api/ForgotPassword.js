@@ -16,7 +16,13 @@ const mailOptions = {
   subject: 'Test Email',
   text: 'This is a test email from nodemailer.'
 };
-
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
       // Handle forgot password logic here
       const { email } = req.body;
       // Send reset password email to the user's email address

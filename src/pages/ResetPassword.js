@@ -18,6 +18,7 @@ export default function ForgotPassword() {
     });
 
     if (response.status === 200) {
+      alert('A reset password email has been sent to your email address.')
       setSuccess(true);
     }
   }
@@ -44,8 +45,6 @@ export default function ForgotPassword() {
             </div>
          </div>
          </div>
-         <br/>
-          {success && <p style={{font:'normal normal normal 20px/24px Rubik',width:'380px',height:'-1px',position:'relative',}}>A reset password email has been sent to your email address.</p>}
          </article>
               
        </form>
