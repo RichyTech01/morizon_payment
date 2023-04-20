@@ -4,6 +4,8 @@ import ToggleSwitch from '../idComponents/toggle switch/toggleSwitch';
 import Link from 'next/link';
 import { Lists } from '../Data';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+import { CircularProgress } from '@material-ui/core';
 
 const Content = () => {
 
@@ -15,7 +17,12 @@ const Content = () => {
   const handleDeposit = () => {
     router.push(`/Dashboard/${id}/processingOff`)
   }
-
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000)
+  })
 return (
     <main className={styles.main}>
         <div className={styles.contentheader}>
@@ -73,6 +80,20 @@ return (
         <hr style={{
             opacity:'0.2'
         }}/>
+        {loading ? (
+          <div style={{ display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '20vh',
+          position:'relative',
+          animation:'fadeIn 1s',
+          // left:'3em'
+     }}>
+
+  <CircularProgress />
+  
+</div>
+        ) : (
         <div className={styles.tablecont}>
         <table className={`${styles.table}`}>
   <thead className={`${styles.thead2} ${styles.thtr}`}>
@@ -100,6 +121,7 @@ return (
 </table>
 
     </div>
+        )}
       </div>
     </main>
 );

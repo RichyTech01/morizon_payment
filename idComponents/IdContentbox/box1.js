@@ -3,19 +3,25 @@ import InfoRoundedIcon from '@material-ui/icons/InfoRounded';
 import { useRouter } from "next/router";
 import { Lists } from '../../Data'
 import Image from 'next/image';
-
+import { useState } from 'react';
+import PageLoading from '../../Dashboard/PageLoading';
 const Box1 = () => {
+  const [loading, setLoading] = useState(true);
+
+   setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   const router = useRouter();
   const { id } = router.query;
 
-  // Find the post by its id
   const post = Lists.find(list => list.name === id);
 
   if (!post) {
     return <div>Post not found</div>;
   }
   return ( 
-    <div>
+    <div className={styles.box1}>
+    
       <div className={styles.box1header}>
         <InfoRoundedIcon style={{fontSize:'38px', color:' #0D1CB3 ',marginTop:'1.1em'}} />
         <p  className={styles.box1headertext}>
@@ -26,6 +32,11 @@ const Box1 = () => {
         </p>
       </div>
       <hr/>
+      <div>
+      {loading ? (
+        <PageLoading/>
+      ) : (
+      <div className={styles.first1boxdeatils}>
       <div className={styles.parentdiv}>
       <div className={styles.parentcont}>
        <p className={styles.parenttext}>{post.name}</p> 
@@ -79,7 +90,9 @@ const Box1 = () => {
       <div className={styles.parentcont}>
        <p className={styles.Lparenttext}>{post.address}</p> 
       </div>
-
+      </div>
+      )}
+      </div>
     </div>
   );
 }

@@ -434,6 +434,9 @@ color: #000000;
   align-items: center;
   justify-content: center;
   margin-top: 2em;
+  opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s ease-in-out forwards;
 }
 .firstinput{
   display: flex;
@@ -442,7 +445,7 @@ color: #000000;
   
 }
 
-.title{
+.title {
   margin-left: 1em;
   text-align: left;
   font: normal normal 300 26px/31px Rubik;
@@ -644,21 +647,6 @@ cursor: pointer;
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
 }
-
-/* .tr{
-  position: relative;
-  top: 1.4em;
-} */
-/* .thtr {
-  align-items: center;
-} */
-
-/* .thead2{
-  background: #F0F2F7 0% 0% no-repeat padding-box;
-  border-radius: 12px; 
-  width: 80px;
-  align-items: center;
-} */
 
 
 .tr:nth-child(1) td:nth-child(5),
@@ -870,10 +858,41 @@ cursor: pointer;
     opacity: 1;
    }
   
+  
   .delicon {
         width: 13px;
         height: 13px;
         color: #757575;
         opacity: 1;
   }
+  .first1boxdeatils{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    }
+    .box2id{
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s ease-in-out forwards;
+    }
+    .thirdbox{
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s ease-in-out forwards;
+    }
+    .fourthboxanimate{
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s ease-in-out forwards;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   

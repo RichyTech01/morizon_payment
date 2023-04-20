@@ -445,3 +445,12 @@ color: #08AE14;
 .td:first-child {
 width: 20%;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

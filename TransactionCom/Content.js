@@ -1,8 +1,16 @@
 import styles from '@/styles/Transaction.module.css';
 import Link from 'next/link';
 import { Lists } from '../Data';
+import { useState } from 'react';
+import { CircularProgress } from '@mui/material';
 
 const Content = () => {
+
+  const [loading, setLoading] = useState(true)
+
+  setTimeout(() => {
+    setLoading(false)
+  }, 1000)
 
 return (
     <main className={styles.main}>
@@ -61,6 +69,7 @@ return (
         <hr style={{
             opacity:'0.2'
         }}/>
+
         <div className={styles.tablecont}>
         <table className={`${styles.table}`}>
   <thead className={`${styles.thead2} ${styles.thtr}`}>
@@ -74,6 +83,22 @@ return (
       <th className={styles.th}>Invoice</th>
     </tr>
   </thead>
+  {loading ? (
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '20vh',
+        position:'relative',
+        left:'37em',
+        position:'relative',
+        animation:'fadeIn 1s'
+    }}>
+
+    <CircularProgress />
+
+    </div>
+  ): (
   <tbody className={`${styles.tbody}`}>
     {Lists.map((List) => (
       <tr key={List.id} className={styles.tr}>
@@ -87,6 +112,7 @@ return (
       </tr>
     ))}
   </tbody>
+  )}
 </table>
 
     </div>

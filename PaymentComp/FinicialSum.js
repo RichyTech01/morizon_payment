@@ -9,11 +9,19 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { useState } from 'react';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import NotificationModal from './NotificationModal';
+
 const Content = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenNotificate, setIsOpenNotificate] = useState(false);
-      
+    const [loading, setLoading] = useState(true)  
+    const [isOpenSetting, setisOpenSetting] = useState(false);
+
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000);
+
+
     const toggleModal = () => {
       setIsOpen(!isOpen);
     };
@@ -26,6 +34,7 @@ const Content = () => {
       const Sback = () => {
         setisOpenSetting(false);
         };
+       
       const Nback = () => {
         setIsOpenNotificate(false);
       };
@@ -82,21 +91,22 @@ const Content = () => {
                 </div>
             </article>
             <hr className={styles.hr}/>
+   <div>
             <article className={styles.secArticle}>
                 <div className={styles.MoneyInOutButton}>
                     <Link href={'/Payment'}>
-                    <button style={{
-                        width: '222px',
-                        height: '56px',
-                        background: ' transparent radial-gradient(closest-side at 87% 100%, #F8F9FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box',
-                        boxShadow: 'inset 0px 0px 10px #B7B7B7',
-                        borderRadius: '8px',
-                        font: 'normal normal 300 19px/23px Rubik',
-                        letterSpacing: '0px',
-                        color: '#000000',
-                        border:'none',
-                        cursor:'pointer'
-                    }}>Money In</button>
+                      <button style={{
+                          width: '222px',
+                          height: '56px',
+                          background: ' transparent radial-gradient(closest-side at 87% 100%, #F8F9FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box',
+                          boxShadow: 'inset 0px 0px 10px #B7B7B7',
+                          borderRadius: '8px',
+                          font: 'normal normal 300 19px/23px Rubik',
+                          letterSpacing: '0px',
+                          color: '#000000',
+                          border:'none',
+                          cursor:'pointer'
+                      }}>Money In</button>
                     </Link>
                     <button style={{
                         width: '222px',
@@ -207,6 +217,7 @@ const Content = () => {
                 position:'relative',
                 top:'-24px'
             }}>Select a time period and currency to create a report.</p>
+          </div>
           </div>
           {isOpen && (
         <div className={styles.modal}>

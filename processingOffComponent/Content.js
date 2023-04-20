@@ -4,8 +4,18 @@ import ToggleSwitch from './ToggleSwitch';
 import Link from 'next/link';
 import { Lists } from '../Data';
 import { useRouter } from 'next/router';
+import { CircularProgress } from '@material-ui/core';
+import { useState, useEffect } from 'react';
+
 
 const Content = () => {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000)
+  })
+
   const router = useRouter()
   const {id} = router.query
   const handleWithdraw =()=>{
@@ -37,6 +47,7 @@ return (
             <ToggleSwitch />
             </div>
         </div>
+
       <div className={styles.contentbox}>
         <div className={styles.buttons}>
             <button className={styles.depositbtn}>Deposit</button>
@@ -51,6 +62,20 @@ return (
         <hr style={{
             opacity:'0.2'
         }}/>
+        {loading ? (
+          <div style={{ display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '20vh',
+          position:'relative',
+          animation:'fadeIn 1s',
+          // left:'3em'
+     }}>
+
+  <CircularProgress />
+  
+</div>
+        ) : (
         <div className={styles.tablecont}>
         <table className={`${styles.table}`}>
   <thead className={`${styles.thead2} ${styles.thtr}`}>
@@ -78,6 +103,7 @@ return (
 </table>
 
     </div>
+    )}
       </div>
     </main>
 );

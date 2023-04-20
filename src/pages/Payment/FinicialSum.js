@@ -3,7 +3,11 @@ import HeaderDash from "../../../PaymentComp/Header";
 import LeftNavbar from '../../../Dashboard/LeftNavbar';
 import FinicialSum from '../../../PaymentComp/FinicialSum';
 const Payment = () => {
-    return ( 
+   
+
+    return (
+        <div>
+         
         <div className={styles.Dashboardparent}>
             <header className={styles.headercontentp}>
             <HeaderDash/>
@@ -16,6 +20,7 @@ const Payment = () => {
                     <FinicialSum />
                 </content>
             </div>
+        </div>
         </div>
      );
 }

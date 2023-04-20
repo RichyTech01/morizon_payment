@@ -1,8 +1,14 @@
 import styles from '@/styles/Id.module.css';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import MonetizationOnRoundedIcon from '@mui/icons-material/MonetizationOnRounded';
-
+import { useState } from 'react';
+import PageLoading from '../../Dashboard/PageLoading';
 const Box4 = () => {
+  const [loading, setLoading] = useState(true);
+
+  setTimeout(() => {
+     setLoading(false);
+   }, 1000);
   return ( 
     <div className={styles.box4parentcont}>
       <div className={styles.boxparentcnt}>
@@ -19,6 +25,11 @@ const Box4 = () => {
           </div>
         </div> 
         <hr style={{width: '49.3em'}} />
+        <div>
+          {loading ? (
+        <PageLoading/>
+       ) : (
+        <div className={styles.fourthboxanimate}>
         <article className={styles.personalcontainer}>
           <div className={styles.monetizatext}>
             <MonetizationOnRoundedIcon 
@@ -100,6 +111,10 @@ const Box4 = () => {
             
           </div>
         </article>
+        </div>
+        )}
+        
+        </div>
       </div>
     </div>
   );

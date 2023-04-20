@@ -9,13 +9,19 @@ import { useState } from 'react';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import NotificationModal from './NotificationModal';
 import SettingModal from './SettingModal';
+import { CircularProgress } from '@material-ui/core';
 const Content = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenSetting, setisOpenSetting] = useState(false);
     const [isOpenNotificate, setIsOpenNotificate] = useState(false);
-      
+    const [loading, setLoading] = useState(true);
+
+    setTimeout(() => {
+       setLoading(false);
+     }, 1000);
     const toggleModal = () => {
+    
       setIsOpen(!isOpen);
     };
     const back = () => {
@@ -83,6 +89,21 @@ const Content = () => {
                 </div>
             </article>
             <hr className={styles.hr}/>
+                        {loading ? (
+                <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '20vh',
+                position:'relative',
+                animation:'fadeIn 1s'
+            }}>
+
+            <CircularProgress />
+
+       </div>
+            ) : (
+              <div>
             <article className={styles.secArticle}>
                 <div className={styles.MoneyInOutButton}>
                     <button style={{
@@ -163,6 +184,7 @@ const Content = () => {
       <th className={styles.th}>Amount</th>
     </tr>
   </thead>
+  
   <tbody className={`${styles.tbody}`}>
     {Lists.map((List) => (
       <tr key={List.id} className={styles.tr}>
@@ -175,6 +197,9 @@ const Content = () => {
     ))}
   </tbody>
 </table>
+</div>
+            )}
+
 {isOpen && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>

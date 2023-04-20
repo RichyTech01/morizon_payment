@@ -1,7 +1,15 @@
 import AddBusinessRoundedIcon from '@mui/icons-material/AddBusinessRounded';
 import styles from '@/styles/Id.module.css';
+import { useState } from 'react';
+import PageLoading from '../../Dashboard/PageLoading';
 
 const Box5 = () => {
+    const [loading, setLoading] = useState(true);
+
+    setTimeout(() => {
+       setLoading(false);
+     }, 1000);
+
     return ( 
         <div>
             <div className={styles.addicontext}>
@@ -14,6 +22,10 @@ const Box5 = () => {
                 <p className={styles.coupontext}>Coupon Code</p>
             </div>
             <hr/>
+            <div>
+                {loading ? (
+                    <PageLoading/>
+                ) : (
             <form className={styles.form}>
                 <div  className={styles.forminputparent} >
                 <div className={styles.firstinput}>
@@ -45,6 +57,8 @@ const Box5 = () => {
                 <button className={styles.button}>Add</button>
                 </div>
             </form>
+            )}
+            </div>
         </div>
      );
 }

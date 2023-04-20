@@ -12,8 +12,10 @@ justify-content: center;
 margin: 0 auto;
 position: relative;
 margin-top: 188px;
-
+transform: translateY(20px);
+animation: fadeInUp 0.5s ease-in-out forwards;
 }
+
 .image1 {
   margin-top: -2em;
 }
@@ -42,6 +44,8 @@ height: 49px;
 background: linear-gradient(to left, #3EB9E5 2%, #0D1CB3 70%);
 box-shadow: inset 0px 0px 10px #021697;
 border-radius: 8px;
+position: relative;
+top: 2.3em;
 opacity: 1;
 color: #f6f6f6;
 cursor: pointer;
@@ -114,4 +118,13 @@ cursor: pointer;
 margin-right: 1px;
 float: right;
 }
-    
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

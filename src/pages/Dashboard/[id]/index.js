@@ -14,9 +14,11 @@ const HeaderDashdetail = () => {
                 <nav className={styles.navcontainer}>
                     <Navbar/>
                 </nav>
+
                 <content className={styles.contentparent}>
                     <Content />
             </content>
+
      </div>
         </div>
     )

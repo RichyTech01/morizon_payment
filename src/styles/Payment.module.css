@@ -151,6 +151,8 @@
    .mainparent{
     width: 1540px;
     height: 1070px;  
+  animation: fadeIn 1s;
+
    }
    .setingsIconContainer{
     width: 56px;
@@ -698,4 +700,12 @@
     opacity: 1;
     display: flex;
     align-items: center;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }

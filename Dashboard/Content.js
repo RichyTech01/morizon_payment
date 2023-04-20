@@ -6,16 +6,28 @@ import PersonSharp from '@material-ui/icons/PersonSharp';
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import { useRouter } from 'next/router';
 import { Lists } from '../Data';
+import { CircularProgress } from '@mui/material';
+import { useState } from 'react';
 
 const Content = () => {
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
 
+  setTimeout(() => {
+     setLoading(false);
+   }, 1000);
+ 
   const handleclick = (id) => {
     router.push(`/Dashboard/${id}`);
   }
 
     return ( 
-      <div className={styles.dashcontainer}>
+      <div  
+      // initial={{ opacity: 0, x: -100 }}
+      // animate={{ opacity: 1, x: 0 }}
+      // transition={{ delay: 0.5, duration: 1.5,  ease: 'easeInOut'   }}
+       className={styles.dashcontainer} key='Dashboard'>
+        {/* <Transition in={true} timeout={300} classNames="page-enter" unmountOnExit> */}
         <button className={styles.addcompanyBtn}>
         <span className={styles.addroundediconcont}>
           <AddRoundedIcon className={styles.addroundedicon} />
@@ -45,6 +57,7 @@ const Content = () => {
         </div> 
         <hr className={styles.hr}/>
         <div className={styles.dataparent}>
+
           <table className={styles.table}>
             <thead className={styles.thead}>
               <tr>
@@ -56,7 +69,23 @@ const Content = () => {
                 <th className={styles.th}>ID Storage</th>
                 <th className={styles.th}>Action</th>        
               </tr>
-            </thead>
+          </thead>
+          {loading ? (
+
+       
+          <div style={{ display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '30vh',
+              position:'relative',
+              left:'25em',
+              animation:'fadeIn 1s'
+         }}>
+
+      <CircularProgress />
+      
+    </div>
+       ) : (
             <tbody>
               {Lists.map((List) => (
                 <tr key={List.id} className={`${styles.tdata} hover-row`}>                  
@@ -82,9 +111,12 @@ const Content = () => {
 
                ))}
           </tbody>
+          )}
       </table>
       </div>
       </div>
+
+      {/* </Transition> */}
       </div>
      );
 }

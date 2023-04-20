@@ -2,10 +2,19 @@ import styles from '@/styles/Transaction.module.css';
 import Link from 'next/link';
 import { Lists } from '../../../Data';
 import HeaderDash from '../../../TransactionCom/Header';
+import { CircularProgress } from '@mui/material';
 import LeftNavbar from '../../../Dashboard/LeftNavbar';
+import { useState } from 'react';
 const Content = () => {
 
+const [loading, setLoading] = useState()
+setTimeout(() => {
+  setLoading(false)
+}, 1000)
+
 return (
+  <div>
+ 
     <div  className={styles.Dashboardparent}>
         <header className={styles.headercontentp}>
         <HeaderDash/>
@@ -82,6 +91,7 @@ return (
       <th className={styles.th}>Invoice</th>
     </tr>
   </thead>
+  
   <tbody className={`${styles.tbody}`}>
     {Lists.map((List) => (
       <tr key={List.id} className={styles.tr}>
@@ -99,6 +109,7 @@ return (
     </div>
       </div>
     </main>
+    </div>
     </div>
     </div>
 

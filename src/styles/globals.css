@@ -119,3 +119,21 @@ height: 5px;
 color: #B7B7B7;
 opacity: 1;
 }
+
+.page-transition {
+  overflow: hidden;
+}
+
+.page-transition > * {
+  transform: translateX(100%);
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

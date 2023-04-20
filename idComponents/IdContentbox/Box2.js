@@ -1,8 +1,15 @@
 import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
 import styles from '@/styles/Id.module.css';
 import AttachFileRoundedIcon from '@mui/icons-material/AttachFileRounded';
-
+import { useState } from 'react';
+import PageLoading from '../../Dashboard/PageLoading';
 const Box2 = () => {
+  const [loading, setLoading] = useState(true);
+
+   setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
     return ( 
         <div>
             <div className={styles.documenticon}>
@@ -18,6 +25,11 @@ const Box2 = () => {
             </p>
             </div>
             <hr/>
+            <div>
+              {loading ? (
+                <PageLoading/>
+              ): (
+                <div className={styles.box2id}>
             <div className={styles.legalattatchfile}>
                 <p className={styles.legaltext}>Legal Document.PDF</p>
                 <AttachFileRoundedIcon 
@@ -29,6 +41,7 @@ const Box2 = () => {
                   }}
                 />
             </div>
+          
             <div className={styles.legaldocument}>
                 <p className={styles.legaltext}>Document 1 .pdf</p>
                 <AttachFileRoundedIcon 
@@ -72,6 +85,10 @@ const Box2 = () => {
                     color:'#757575 '
                   }}
                 />
+            </div>
+            </div>
+            )}
+
             </div>
             
         </div>
