@@ -1,7 +1,7 @@
-import HeaderDash from "../../../TransactionCom/Header";
-import LeftNavbar from "../../../Dashboard/LeftNavbar";
+import HeaderDash from "../../components/TransactionCom/Header";
+import LeftNavbar from "../../components/Dashboard/LeftNavbar";
 import styles from '@/styles/Transaction.module.css'
-import Content from "../../../TransactionCom/Content";
+import Content from "../../components/TransactionCom/Content";
 import {motion} from 'framer-motion'
 const Transaction = () => {
  

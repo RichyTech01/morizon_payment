@@ -1,7 +1,7 @@
 import styles from '@/styles/Payment.module.css'
-import HeaderDash from "../../../PaymentComp/Header";
-import LeftNavbar from '../../../Dashboard/LeftNavbar';
-import Content from '../../../PaymentComp/Content';
+import HeaderDash from "../../components/PaymentComp/Header";
+import LeftNavbar from '../../components/Dashboard/LeftNavbar';
+import Content from '../../components/PaymentComp/Content';
 import {motion} from 'framer-motion'
 
 const Payment = () => {

@@ -1,9 +1,9 @@
 import styles from '@/styles/Transaction.module.css';
 import Link from 'next/link';
-import { Lists } from '../../../Data';
-import HeaderDash from '../../../TransactionCom/Header';
+import { Lists } from '../../components/Data';
+import HeaderDash from '../../components/TransactionCom/Header';
 import { CircularProgress } from '@mui/material';
-import LeftNavbar from '../../../Dashboard/LeftNavbar';
+import LeftNavbar from '../../components/Dashboard/LeftNavbar';
 import { useState } from 'react';
 const Content = () => {
 

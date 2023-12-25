@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Login from '../../FormComponent/Login'
+import Login from '../components/FormComponent/Login'
 
 export default function Home() {
   

@@ -1,7 +1,7 @@
 import styles from '@/styles/Payment.module.css'
-import HeaderDash from "../../../PaymentComp/Header";
-import LeftNavbar from '../../../Dashboard/LeftNavbar';
-import FinicialSum from '../../../PaymentComp/FinicialSum';
+import HeaderDash from "../../components/PaymentComp/Header";
+import LeftNavbar from '../../components/Dashboard/LeftNavbar';
+import FinicialSum from '../../components/PaymentComp/FinicialSum';
 const Payment = () => {
    
 

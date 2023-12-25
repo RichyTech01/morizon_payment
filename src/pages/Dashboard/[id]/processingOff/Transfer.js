@@ -1,7 +1,7 @@
-import Header from '../../../../../idComponents/Header';
+import Header from '../../../../components/idComponents/Header';
 import styles from '@/styles/Id.module.css';
-import Navbar from '../../../../../idComponents/Navbar';
-import TransferContent from '../../../../../processingOffComponent/TransferContent'
+import Navbar from '../../../../components/idComponents/Navbar';
+import TransferContent from '../../../../components/processingOffComponent/TransferContent'
 const Withdraw = () => {
     return ( 
         <div>

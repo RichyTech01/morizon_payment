@@ -3,11 +3,13 @@ import Link from "next/link";
 import Formheader from "./Formheader";
 import { useState } from 'react';
 import Router from 'next/router';
+import { API_ENDPOINT } from '../../../config/config';
+import ApiLogin from '../../app/Authentication/Login'
 
 export default function Login() {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
   const [succes, setSuccess] = useState('');
 
   const [isLoggingIn, setIsLoggingIn] = useState(false);
@@ -15,31 +17,16 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsLoggingIn(true);
-  
-    const response = await fetch('/api/Login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ userName, password })
-    });
-  
-    if (response.status === 200) {
-      setSuccess('Logging in...');
-      setTimeout(() => {
-        Router.push('/Dashboard');
-        setIsLoggingIn(false);
-        setError(false);
-      }, 2000);
-    } else {
-      const data = await response.json();
-      setTimeout(() => {
-        setError(data.error);
-        setIsLoggingIn(false);
-      }, 2000);
+    try {
+      await ApiLogin({ userName, password })
+      Router.push('/Dashboard');
+    } catch (error) {
+      console.error(error.stack)
+      setError(error.message);
     }
+    setIsLoggingIn(false);
   };
-  
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -73,6 +60,7 @@ export default function Login() {
                 <button type='submit' className={styles.loginbutton} disabled={isLoggingIn}>
                   {isLoggingIn ? 'Logging in...' : 'Login'}
                 </button>
+                <hr />
                 {error && !isLoggingIn && (
                   <p style={{ color: 'red', font: 'normal normal normal 20px/24px Rubik' }}>{error}</p>
                 )}

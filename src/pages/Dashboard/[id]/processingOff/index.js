@@ -1,7 +1,7 @@
-import Header from '../../../../../idComponents/Header';
+import Header from '../../../../components/idComponents/Header';
 import styles from '@/styles/Id.module.css';
-import Navbar from '../../../../../idComponents/Navbar';
-import Content from '../../../../../processingOffComponent/Content';
+import Navbar from '../../../../components/idComponents/Navbar';
+import Content from '../../../../components/processingOffComponent/Content';
 
 const ProcessingOff = () => {
   

@@ -1,6 +1,6 @@
-import Header from '../../../../idComponents/Header';
-import Navbar from '../../../../idComponents/Navbar';
-import Content from '../../../../idComponents/Content';
+import Header from '../../../components/idComponents/Header';
+import Navbar from '../../../components/idComponents/Navbar';
+import Content from '../../../components/idComponents/Content';
 import styles from '@/styles/Id.module.css';
 
 const HeaderDashdetail = () => {

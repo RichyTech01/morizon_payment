@@ -1,7 +1,7 @@
 import styles from '@/styles/Dashboard.module.css'
-import Content from '../../../Dashboard/Content';
-import LeftNavbar from '../../../Dashboard/LeftNavbar';
-import HeaderDash from '../../../Dashboard/HeaderDash';
+import Content from '../../components/Dashboard/Content';
+import LeftNavbar from '../../components/Dashboard/LeftNavbar';
+import HeaderDash from '../../components/Dashboard/HeaderDash';
 import { motion } from 'framer-motion';
 
 const Dashboard = () => {
